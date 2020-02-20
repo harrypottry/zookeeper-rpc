@@ -17,7 +17,8 @@ public class App
                 try {
                     countDownLatch.await();
                     DistributedLock distributedLock=new DistributedLock();
-                    distributedLock.lock(); //获得锁
+                    //获得锁
+                    distributedLock.lock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
