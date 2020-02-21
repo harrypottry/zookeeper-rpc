@@ -1,7 +1,5 @@
 package com.test.rmi;
 
-import java.util.concurrent.CountDownLatch;
-
 /**
  * @author harrypotter
  */

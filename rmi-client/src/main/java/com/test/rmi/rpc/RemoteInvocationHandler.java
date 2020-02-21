@@ -27,7 +27,8 @@ public class RemoteInvocationHandler implements InvocationHandler {
         request.setParameters(args);
         request.setVersion(version);
 
-        String serviceAddress=serviceDiscovery.discover(request.getClassName()); //根据接口名称得到对应的服务地址
+        //根据接口名称得到对应的服务地址
+        String serviceAddress=serviceDiscovery.discover(request.getClassName());
         //通过tcp传输协议进行传输
         TCPTransport tcpTransport=new TCPTransport(serviceAddress);
         //发送请求
